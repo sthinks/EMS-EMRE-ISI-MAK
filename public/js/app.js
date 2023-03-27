@@ -7269,10 +7269,13 @@ function Header() {
                   className: "block h-6 w-6 text-slate-700 text",
                   "aria-hidden": "true"
                 })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-                className: "block lg:hidden h-12",
-                src: _assets_header_logo_png__WEBPACK_IMPORTED_MODULE_0__.default,
-                alt: "Your Company"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "/",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+                  className: "block lg:hidden h-12",
+                  src: _assets_header_logo_png__WEBPACK_IMPORTED_MODULE_0__.default,
+                  alt: "Logo"
+                })
               })]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
               className: "flex items-center justify-center sm:items-stretch sm:justify-around text-[#191919] font-semibold w-full",
@@ -7287,7 +7290,7 @@ function Header() {
                       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
                         className: "block w-auto lg:hidden",
                         src: _assets_header_logo_png__WEBPACK_IMPORTED_MODULE_0__.default,
-                        alt: "Your Company"
+                        alt: "Logo"
                       })
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
                       href: "/",
@@ -8568,7 +8571,6 @@ function Home() {
               _context2.next = 2;
               return _utils_axiosClient__WEBPACK_IMPORTED_MODULE_6__.default.get("/products").then(function (response) {
                 setProduct(response.data);
-                console.log(response.data);
               })["catch"](function (error) {
                 console.log(error);
               });
@@ -8819,7 +8821,6 @@ function ProductDetail() {
               return _utils_axiosClient__WEBPACK_IMPORTED_MODULE_4__.default.get("/product-detail/".concat(slug.slug)).then(function (response) {
                 setData(response.data);
                 setLoading(true);
-                console.log(response.data);
               })["catch"](function (error) {
                 console.log(error);
               });
@@ -9082,7 +9083,6 @@ function Product() {
     var result = data === null || data === void 0 ? void 0 : data.filter(function (item) {
       return item.id === value;
     });
-    console.log(result[0].image);
     setModal(true);
     setFilterImage(result[0].image);
   };
@@ -9332,7 +9332,6 @@ function Technical() {
               _context.next = 2;
               return _utils_axiosClient__WEBPACK_IMPORTED_MODULE_4__.default.get("/technical-information").then(function (response) {
                 setData(response.data);
-                console.log(response.data);
                 setLoading(true);
               })["catch"](function (error) {
                 console.log(error);

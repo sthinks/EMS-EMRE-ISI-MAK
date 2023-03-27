@@ -51,11 +51,9 @@ export default function Header() {
                     />
                   )}
                 </Disclosure.Button>
-                <img
-                  className="block lg:hidden h-12"
-                  src={Logo}
-                  alt="Your Company"
-                />
+                <a href="/">
+                  <img className="block lg:hidden h-12" src={Logo} alt="Logo" />
+                </a>
               </div>
               <div className="flex items-center justify-center sm:items-stretch sm:justify-around text-[#191919] font-semibold w-full">
                 <div className="hidden sm:ml-6 sm:block w-[85%] max-xl:w-full">
@@ -65,7 +63,7 @@ export default function Header() {
                         <img
                           className="block w-auto lg:hidden"
                           src={Logo}
-                          alt="Your Company"
+                          alt="Logo"
                         />
                       </a>
                       <a href="/">

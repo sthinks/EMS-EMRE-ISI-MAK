@@ -30,7 +30,6 @@ function Home() {
       .get(`/products`)
       .then(function (response) {
         setProduct(response.data)
-        console.log(response.data)
       })
       .catch(function (error) {
         console.log(error)

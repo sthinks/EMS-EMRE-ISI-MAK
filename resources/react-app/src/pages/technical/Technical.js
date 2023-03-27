@@ -12,7 +12,7 @@ function Technical() {
       .get(`/technical-information`)
       .then(function (response) {
         setData(response.data)
-        console.log(response.data)
+
         setLoading(true)
       })
       .catch(function (error) {

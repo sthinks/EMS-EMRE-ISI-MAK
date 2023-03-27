@@ -20,7 +20,7 @@ function ProductDetail() {
       .then(function (response) {
         setData(response.data)
         setLoading(true)
-        console.log(response.data)
+      
       })
       .catch(function (error) {
         console.log(error)
