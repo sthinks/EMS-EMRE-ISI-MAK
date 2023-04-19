@@ -61,7 +61,7 @@ function Product() {
           <div className="w-full grid grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-2">
             {data?.map((item, i) => (
               <div
-                className="cursor-pointer h-auto bg-white flex justify-start items-center flex-col shadow-ems hover:scale-[1.08] transition delay-150"
+                className="cursor-pointer h-auto bg-white flex justify-start items-center flex-col shadow-ems hover:scale-[1.08] transition delay-150 max-md:hover:scale-100 "
                 onClick={() => navigate(`/ürünler/${item.slug}`)}
                 onMouseEnter={() => setYellow(item.id)}
                 onMouseLeave={() => setYellow()}

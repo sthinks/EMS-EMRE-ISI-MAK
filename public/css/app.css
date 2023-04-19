@@ -3,4 +3,21 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("/fonts/Myriad Pro Light.otf?b0bb7658963c5d720dddf8c8479eda72");
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("/fonts/Myriad Pro Bold SemiExtended.ttf?683500a9e2ccb1ee949ebe43c1a40172");
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(/fonts/MyriadPro-BlackSemiCn.otf?58170b9feeea3ae1791dfd3b72d68285);
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("/fonts/Myriad Pro Regular.ttf?c59859cec849233be7f825c2fe1a29ea");
+}
 

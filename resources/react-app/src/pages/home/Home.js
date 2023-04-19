@@ -55,7 +55,7 @@ function Home() {
             {product?.map((item, i) => (
               <div
                 key={i}
-                className="relative cursor-pointer h-auto bg-white flex justify-start items-center flex-col shadow-ems hover:scale-[1.08] transition delay-150"
+                className="relative cursor-pointer h-auto bg-white flex justify-start items-center flex-col shadow-ems hover:scale-[1.08] transition delay-150 max-md:hover:scale-100"
                 onClick={() => navigate(`/ürünler/${item.slug}`)}
                 onMouseEnter={() => setYellow(item.id)}
                 onMouseLeave={() => setYellow()}
