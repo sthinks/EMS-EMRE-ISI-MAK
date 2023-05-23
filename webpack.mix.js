@@ -1,4 +1,4 @@
-const mix = require('laravel-mix')
+const mix = require("laravel-mix");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,45 +11,45 @@ const mix = require('laravel-mix')
  */
 
 mix.options({
-  postCss: [require('autoprefixer')],
-})
+    postCss: [require("autoprefixer")],
+});
 
-mix.setPublicPath('public')
+mix.setPublicPath("public");
 
-mix
-  .webpackConfig({
+mix.webpackConfig({
     resolve: {
-      extensions: ['.js', '.vue'],
-      alias: {
-        '@': __dirname + 'resources',
-      },
+        extensions: [".js", ".vue"],
+        alias: {
+            "@": __dirname + "resources",
+        },
     },
     output: {
-      chunkFilename: 'js/chunks/[name].js',
+        chunkFilename: "js/chunks/[name].js",
     },
-  })
-  .react()
+}).react();
 
-mix
-  .js('resources/js/app.js', 'public/js')
-  .postCss('resources/css/app.css', 'public/css', [require('tailwindcss')])
+mix.js("resources/js/app.js", "public/js").postCss(
+    "resources/css/app.css",
+    "public/css",
+    [require("tailwindcss")]
+);
 
 // used to run app using reactjs
-mix.js('resources/react-app/src/index.js', 'public/js/app.js').version()
-mix.copy('resources/react-app/public', 'public')
-mix.extend('addWebpackLoaders', (webpackConfig, loaderRules) => {
-  loaderRules.forEach((loaderRule) => {
-    webpackConfig.module.rules.push(loaderRule)
-  })
-})
-
+mix.js("resources/react-app/src/index.js", "public/js/app.js").version();
+mix.copy("resources/react-app/public", "public");
+mix.extend("addWebpackLoaders", (webpackConfig, loaderRules) => {
+    loaderRules.forEach((loaderRule) => {
+        webpackConfig.module.rules.push(loaderRule);
+    });
+});
+mix.disableNotifications();
 mix.addWebpackLoaders([
-  {
-    test: /\.(mp4|svg|jpe?g|gif)$/,
-    use: [
-      {
-        loader: 'file-loader',
-      },
-    ],
-  },
-])
+    {
+        test: /\.(mp4|svg|jpe?g|gif)$/,
+        use: [
+            {
+                loader: "file-loader",
+            },
+        ],
+    },
+]);

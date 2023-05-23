@@ -3,20 +3,5 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url('../react-app/src/fonts/Myriad\ Pro\ Light.otf');
-}
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url('../react-app/src/fonts/Myriad\ Pro\ Bold\ SemiExtended.ttf');
-}
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url('../react-app/src/fonts/MyriadPro-BlackSemiCn.otf');
-}
 
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url('../react-app/src/fonts/Myriad\ Pro\ Regular.ttf');
-}
+@import "~react-image-gallery/styles/css/image-gallery.css";

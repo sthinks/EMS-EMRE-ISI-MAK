@@ -1,3 +1,9 @@
 body {
   margin: 0;
 }
+@font-face {
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -18,3 +18,21 @@
 .slick-track {
   margin-top: 50%;
 }
+@import 'swiper/less';
+@import 'swiper/less/navigation';
+@import 'swiper/less/pagination';
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev{
+  color: white;
+}
+.swiper-button-next{
+  color: white;
+}
+.swiper-wrapper{
+  display: flex;
+  align-items: center;
+}

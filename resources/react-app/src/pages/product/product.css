@@ -1,17 +1,4 @@
-.slick-prev:before,
-.slick-next:before {
-  font-size: 35px !important;
-  color: black !important;
-  opacity: 1.75 !important;
-}
-.slick-prev {
-  left: -58px !important;
-}
-.slick-next {
-  right: -58px !important;
-}
-.slick-prev:before {
-  font-size: 35px !important;
-  color: black !important;
-  opacity: 1.75 !important;
+
+.image-gallery{
+    width: 35% !important;
 }

@@ -33,6 +33,7 @@
     "photoswipe": "^5.3.6",
     "react-bootstrap": "^2.7.0",
     "react-icons": "^4.7.1",
+    "react-image-gallery": "^1.2.11",
     "react-modal-image": "^2.6.0",
     "react-player": "^2.12.0",
     "react-query": "^3.39.3",
@@ -40,8 +41,9 @@
     "react-router-dom": "^6.7.0",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.2",
+    "react-touch-drag-slider": "^2.2.5",
     "slick-carousel": "^1.8.1",
-    "swiper": "^8.4.6",
+    "swiper": "^8.4.7",
     "url-loader": "^4.1.1",
     "yet-another-react-lightbox": "^3.0.0",
     "yup": "^0.32.11"
